@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0",  maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&
+    family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;
+    1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;600&display=swap"
+    rel="stylesheet"/>
+    <title>My Personal Biodata</title>
+</head>
+<header>
+    <div class="header-Container">
+        <img class="Profile" src="/gambar/Ardhi.jpg">
+        <div class="Detail-Profile">
+            <h1 class="name">Ardhiansyah Hadi Nugroho</h1>
+            <h1 class="Capt">Website Developer | UI/UX Designer | Quality Assurance </h1>
+            <div>
+                <a target="_blank" href="/gambar/CV IT_Ardhiansyah Hadi Nugroho.pdf"><button class="CV" type="">Curicullum Vitae</button></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ardhiansyahhn/"><button class="Linkedin">Linkedin</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="content">
+        <div class="About">
+            <h1> Profil </h1>
+            <hr>
+            <p>Saya adalah lulusan S1 Sistem Komputer dengan pengalaman sebelumnya sebagai staff asisten riset di Pusat 
+                Studi Multimedia dan Robotika Universitas Gunadarma. Saya juga aktif terlibat dalam organisasi BEM 
+                FIKTI UG. Saya memiliki motivasi untuk mengembangkan karier saya dengan memfokuskan pada tiga 
+                bidang utama yaitu IT. Selain itu, saya memiliki kompetensi teknis yang kuat dalam melakukan riset 
+                program, membuat dan menganalisis program, serta memiliki pemahaman yang baik tentang teknologi 
+                Internet Of Things.
+            </p>
+        </div>
+        <div class="Pendidikan">
+            <h1>Pendidikan</h1>
+            <hr>
+            <h3>
+                Jurusan Sistem Komputer, Universitas Gunadarma
+            </h3>
+            <h4> 2019 – 2023 </h4>
+            <ul>
+                <li class="IPK">IPK: 3.45/4.00</li>
+            </ul>
+        </div>
+        <div class="Experience">
+            <h1> Pengalaman Kerja & Organisasi </h1>
+            <hr>
+            <div class="Aslab">
+                <h3>Reasearch Assistant, Pusat Studi Multimedia dan Robotika Universitas Gunadarma</h3>
+                <h4>Maret 2022 – September 2023 | Depok, Jawa Barat, Indonesia</h4>
+                <ul class="desk">
+                    <li>Membuat dan mengembangkan modul praktikum</li>
+                    <li>Membuat robot praktikum</li>
+                    <li>Mengerjakan proyek dosen</li>
+                    <li>Membantu mahasiswa terkait matakuliah Penulisan Ilmiah, Proyek Sistem komputer, praktikum 
+                        robotika, dan Skripsi.</li>
+                </ul>
+            </div>
+            <div class="Magang">
+                <h3>Reasearch and Development Intern, Kampus Merdeka</h3>
+                <h4>September 2022 – Desember 2022 | Penajam Paser Utara, Kalimantan Timur, Indonesia</h4>
+                <ul class="desk">
+                    <li>Membuat sistem cerdas dan pemantauan lahan pertanian energi terbarukan yang berbasis web lokal 
+                        dan menggunakan teknologi irigasi tetes. </li>
+                    <li>Membuat data yang dihasilkan dari client agar dikomunikasikan ke Server melalui jaringan Radio 
+                        LoRa.</li>
+                    <li>Membuat maket dari sistem cerdas irigasi tetes.</li>
+                </ul>
+            </div>
+            <div class="Organisasi">
+                <h3>Staff Biro Pengembangan Sumber Daya Manusia, BEM FIKTI Universitas Gunadarma</h3>
+                <h4>Oktober 2020 – Agustus 2021</h4>
+                <ul class="desk">
+                    <li>Menjaga kenyamanan, kekeluargaan, serta kinerja dari SDM agar tetap stabil dari segi performa 
+                        anggota BEM FIKTI</li>
+                    <li>Menjadi Ketua Pelaksana Webinar FIKTI Personnalite </li>
+                    <li>Menjadi Ketua Pelaksana Virtual Gathring Alumni </li>
+                </ul>
+            </div>
+            <div class="Skill">
+            <h1> kompetensi </h1>
+            <hr>
+            <div class="teks">
+                <div class="C">
+                    <img src="/gambar/C++.png" alt="C++">
+                    <h3 class="text1">C++</h3>
+                    <div class="barContainer">
+                    <div id="progress" class="barFilling orange"  data-bar="80"></div>
+                    </div>
+                </div>
+                <div class="Javascript">
+                    <img src="/gambar/JS.png" alt="">
+                    <h3 class="text2">Javascript</h3>
+                    <div class="barContainer">
+                    <div id="progress1" class="barFilling green" data-bar="60"></div>
+                    </div>
+                </div>
+                <div class="Python">
+                    <img src="/gambar/Python.png" alt="">
+                    <h3 class="text3">Python</h3>
+                    <div class="barContainer">
+                    <div id="progress2" class="barFilling purple" data-bar="30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        const barContainer = document.querySelectorAll('.barFilling');
+        barContainer.forEach(function(bar) {
+            var width = 1;
+            var targetWidth = bar.getAttribute('data-bar');
+            var interval = setInterval(frame, 10);
+            function frame() {
+                if (width >= targetWidth) {
+                    clearInterval(interval);
+                    } else {
+                        width++;
+                        bar.style.width = width + '%';
+                    }
+                 }
+            });
+    </script>
+</body>
+<footer>
+    <div class="footer">
+        <h4 class="footer-desk"> &copy; 2022. Ardhiansyah Hadi Nugroho</h3>
+    </div>
+</footer>
+</html>
